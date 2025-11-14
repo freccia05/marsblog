@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&family=Hanalei&family=Henny+Penny&family=Nabla&family=Press+Start+2P&family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Josh's Blog Post</title>
+    <style>
+        @keyframes joshtitlecool {
+            0% {
+                color:#FF0054
+            }
+            50% {
+                color:white
+            }
+        }
+
+        @keyframes rainbow {
+            0% {
+                color:#ff0000
+            }
+            16% {
+                color:rgb(255, 136, 0)
+            }
+            32% {
+                color:rgb(255, 238, 0)
+            }
+            48% {
+                color:rgb(0, 255, 13)
+            }
+            64% {
+                color:rgb(4, 0, 255)
+            }
+            80% {
+                color:rgb(247, 0, 255)
+            }
+
+
+        }
+
+        @keyframes hoverNav {
+            0%{
+                transform: rotate(-5deg);
+            }
+            50%{
+                transform: rotate(10deg) scale(1.1);
+            }
+            
+            100%{
+                transform: rotate(-5deg) scale(1);
+            }
+
+        }
+
+        @keyframes codingg {
+            0% {
+                font-family: 'Courier New', Courier, monospace;
+            }
+            10% {
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            20% {
+                font-family: 'fantasy';
+            }
+            30% {
+                font-family: 'Nabla', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            70% {
+                font-family: 'Sixtyfour Convergence', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            50% {
+                font-family: 'cursive';
+            }
+            60% {
+                font-family: 'Brush Script MT', cursive;
+            }
+            40% {
+                font-family: 'Courier New', monospace;
+            }
+            80% {
+                font-family: 'Fontdiner Swanky';
+            }
+            90% {
+                font-family: 'Hanalei';
+            }
+
+        }
+
+        
+
+        @font-face {
+            font-family: 'VCR';
+            src: url('/CSSTask/VCR_OSD_MONO_1.001.ttf') format('truetype'); 
+            font-weight: normal;
+            font-style: normal; 
+        }
+        
+
+        @keyframes wave {
+
+            0% {
+                transform: translateY(-5px);
+            }
+            50%{
+                transform: translateY(5px);
+            }
+            100%{
+                transform: translateY(-5px);
+            }
+    
+        }
+
+        .waveText span {
+            display: inline-block;
+            letter-spacing: -25px;
+            animation: wave 1s ease-in-out infinite;
+        }
+
+        .waveText span:nth-child(1) {
+            animation-delay: 0s;
+        }
+        .waveText span:nth-child(2) {
+            animation-delay: 0.1s;
+        }
+        .waveText span:nth-child(3) {
+            animation-delay: 0.2s;
+        }
+        .waveText span:nth-child(4) {
+            animation-delay: 0.3s;
+        }
+        .waveText span:nth-child(5) {
+            animation-delay: 0.4s;
+        }
+        .waveText span:nth-child(6) {
+            animation-delay: 0.5s;
+        }
+        .waveText span:nth-child(7) {
+            animation-delay: 0.6s;
+        }
+        .waveText span:nth-child(8) {
+            animation-delay: 0.7s;
+        }
+        .waveText span:nth-child(9) {
+            animation-delay: 0.8s;
+        }
+        .waveText span:nth-child(10) {
+            animation-delay: 0.9s;
+        }
+        .waveText span:nth-child(12) {
+            animation-delay: 0.10s;
+        }
+        .waveText span:nth-child(12) {
+            animation-delay: 0.11s;
+        }
+        .joshtitle {
+            font-family: 'Press Start 2P';
+            color: #FF0054;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            font-size: 60px;
+            border-radius: 5px;
+            transition: 0.3s;
+            display: inline-block;
+            letter-spacing: -10px;
+            animation: joshtitlecool 1.1s infinite;
+            animation-timing-function: steps(1, end);
+        }
+    
+
+        .joshtitle span{
+            display: inline-block;
+            transition: transform 0.1s ease; 
+        }
+        .joshtitle span:hover {
+            transform: rotate(5deg) scale(1.4);
+        }
+
+        .joshtitle span:active {
+            transform: rotate(-5deg) ;
+        }
+
+        .basictext{
+            font-family: 'Press Start 2P';
+            color:white;
+            padding:4px;
+            margin:10px;
+        }
+        nav a {
+            text-decoration: none;
+            display:inline-block;
+            transition: 1s ease-in;
+            margin:10px;
+        }
+        nav a:hover{
+            animation: hoverNav 1.3s cubic-bezier(0.39, 0.575, 0.565, 1) infinite;
+        }
+        .coolpics {
+            border: 5px solid #ffffff;
+            border-radius: 20px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+        }
+        .coolpics:hover{
+            transform: scale(1.1);
+        }
+        .codinggCSS{
+            animation: codingg 1.5s infinite;
+            animation-delay: .1s;
+            animation-timing-function: steps(1, end);
+            position: absolute;
+            padding-left: 10px;
+            top:auto;
+        }
+        .staugustine{
+            display:inline;
+        }
+        .staugustine span{
+            animation: rainbow 1.5s infinite;
+
+        }
+        .staugustine span:nth-child(1) {
+            animation-delay: 0s;
+        }
+        .staugustine span:nth-child(2) {
+            animation-delay: .1s;
+        }
+        .staugustine span:nth-child(3) {
+            animation-delay: .2s;
+        }
+        .staugustine span:nth-child(4) {
+            animation-delay: .3s;
+        }
+        .staugustine span:nth-child(5) {
+            animation-delay: .4s;
+        }
+        .staugustine span:nth-child(6) {
+            animation-delay: .5s;
+        }
+        .staugustine span:nth-child(7) {
+            animation-delay: 0.6s;
+        }
+        .staugustine span:nth-child(8) {
+            animation-delay: .7s;
+        }
+        .staugustine span:nth-child(9) {
+            animation-delay: 0.8s;
+        }
+        .staugustine span:nth-child(10) {
+            animation-delay: 0.9s;
+        }
+        .staugustine span:nth-child(11) {
+            animation-delay: 1s;
+        }
+        .staugustine span:nth-child(12) {
+            animation-delay: 1.1s;
+        }
+        .staugustine span:nth-child(13) {
+            animation-delay: 1.2s;
+        }
+        .staugustine span:nth-child(14) {
+            animation-delay: 1.3s;
+        }
+        .staugustine span:nth-child(15) {
+            animation-delay: 1.4s;
+        }
+        .staugustine span:nth-child(16) {
+            animation-delay: 1.5s;
+        }
+        .staugustine span:nth-child(17) {
+            animation-delay: 1.6s;
+        }
+        .staugustine span:nth-child(18) {
+            animation-delay: 1.7s;
+        }
+        .staugustine span:nth-child(19) {
+            animation-delay: 1.8s;
+        }
+        .staugustine span:nth-child(20) {
+            animation-delay: 1.9s;
+        }
+        .staugustine span:nth-child(21) {
+            animation-delay: 2s;
+        }
+        .staugustine span:nth-child(22) {
+            animation-delay: 2.1s;
+        }
+        
+        #gototop {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #000000;
+            color: white;
+            font-family: "Press Start 2P";
+            padding: 10px 15px;
+            border-radius: 5px;
+            border: 3px white solid;
+            font-size: 16px;
+            z-index: 5;
+        }
+
+        #gototop:hover {
+            background-color: #ffffff;
+            color:black;
+            border:black;
+        }
+
+
+
+    </style>
+</head>
+<body bgcolor="black">
+    <header>       <!--header section-->
+        <center>
+            <h1 class = 'joshtitle' id="top">
+                <span >J</span>
+                <span>O</span>
+                <span>S</span>
+                <span>H</span>
+                <span>'</span>
+                <span>S</span>
+                <span> </span>
+                <span>B</span>
+                <span>L</span>
+                <span>O</span>
+                <span>G</span>
+            </h1>
+        <h2 class="waveText basictext" style="font-size: 25px;">
+            Posted by
+            <span>J</span>
+            <span>o</span>
+            <span>s</span>
+            <span>h</span>
+            <span>u</span>
+            <span>a</span>
+            <span> </span>
+            <span>F</span>
+            <span>o</span>
+            <span>u</span>
+            <span>c</span>
+            <span>h</span>
+          </h2>
+        </center>
+    </header>
+    <a href="#top" id="gototop">To Top</a>
+    <center>
+    <h4 class='basictext'>Some Navigation links around my page:</h4> <!--Links to navigate around the page-->
+    <nav>
+        <a class="basictext" href="#Code Commenting" style="color:#FF0054">Code Commenting</a>
+        <a class="basictext" href="#AugustinePicture" style="color:#813dcf">Cool Quote</a>
+        <a class="basictext" href="#MediaGallery" style="color:#11df89">Media Gallery</a>
+    </nav>
+    </center>
+    <br>
+    <hr> <!--displays a line break in the text-->
+    <center>
+    <section id="Code Commenting">
+    <h2 class="basictext" style="color: #FF0054">>My Thoughts on Code Commenting...</h2>
+    <p class="basictext" style="margin-left: -50px;">One of my <i>favorite</i> hobbies is <b class="codinggCSS"> CODING!</b></p> <!--<b> bolds text, <i> italicizes text-->
+    <div>
+        <main>  <!--specifies the main content of the webpage-->
+        <div style="padding: 3px;margin-right:auto">
+            <span class="basictext" style="font-size: 14px; padding: 3px;margin-right: 3px;">
+                Sometimes coding comments can be very tedious and annoying... However, they are very important for documentation!
+            I once read from a Catholic book, <cite>Holiness for Everyone</cite> from Eric Sammons on the spirituality of St. Josemaria Escriva.
+            He speaks about doing the jobs that no one else notices. Sometimes we become tempted to let simple work slide since it will go unnoticed anyways.
+            However, Sammons explains his experience as a computer programmer. Commenting is essential to coding because it <q>might eventually guide
+            another programmer making changes to my software.</q> (<i>Holiness for Everyone</i>, Sammons).Commenting not only strengthens your code, 
+            but also makes you more of a hard worker. Commenting teaches you that God desires we do everything, whether it is a simple or grand task, 
+            be done with <q>enthusiasm and love</q> (<i>Holiness for Everyone</i>, Sammons).
+            </span>
+        </div>
+        </main>
+    </div>
+
+    <aside> <!--specifices content aside from main content-->
+    <p class="basictext">Anyways, here is an example of a comment in C++:<br>
+    <code>
+        //here is an example of a comment in C++!   <!--code text-->
+    </code>
+    <article class="basictext" style="font-size: 16px;">
+        <h3 style="color: #FF7733; ">>>The C++ Language</h3>
+        <p>
+            C++ is a programming language that implements many different forms of coding
+            such as object-oriented, functional, or procedural languages.
+        </p>
+    </article>
+    </p>
+    <br>
+    <p class="basictext">Here is a <b>funny</b> meme about code commenting as well!</p>
+    <embed class="coolpics" type="image/jpg" src="codememe.jpg" width="400" height="500">    <!--embedding an image-->
+    </aside>
+    </section>
+    </center>
+
+    <br>
+    <hr> <!--displays a line break in the text-->
+    <center>
+    <h2 class="basictext" id="AugustinePicture" style="color: #813dcf">>Quotes!</h2>
+    <p class="staugustine basictext">Here is one of my favorite quotes from <p class="staugustine basictext" style="color:rgb(255, 0, 157); letter-spacing:-8px;">
+        <span>S</span>
+        <span>t</span>
+        <span>.</span>
+        <span>A</span>
+        <span>u</span>
+        <span>g</span>
+        <span>u</span>
+        <span>s</span>
+        <span>t</span>
+        <span>i</span>
+        <span>n</span>
+        <span>e</span>
+        &nbsp; 
+        <span>o</span>
+        <span>f</span>
+        &nbsp;
+        <span>H</span>
+        <span>i</span>
+        <span>p</span>
+        <span>p</span>
+        <span>o</span>
+        <span>:</span>
+    <div>
+    <blockquote
+    cite="https://www.vatican.va/spirit/documents/spirit_20020821_agostino_en.html"> <!--this blocks out a section for a quote and cites the link-->
+        <div class="basictext" style="font-size: 12px;">
+            <span>
+            <abbr>
+                Thou movest us to delight in praising Thee; 
+            for Thou hast formed us for Thyself, 
+            and our <mark>hearts are restless till they find rest in Thee.</mark>
+            </abbr>   <!--highlights text-->
+            </span>
+        </div>
+    </blockquote>
+    </div>
+
+    <p class="basictext" style="font-size: 12px;">Here is a picture of Saint Augustine because he is a cool guy!</p>
+    <section >
+    <div>
+    <figure>    <!--displays an image-->
+        <img class="coolpics" src="augustine.jpg" alt="augustine" style="width:40%">
+        <figcaption class="basictext" style="font-size: 12px;"><cite>Saint Augustine</cite> by Philippe de Champaigne (circa 1645) <!--cite is for a citation-->
+        </figcaption>   <!--caption for figure-->
+    </figure>
+    </section>
+    </div>
+    <br>
+    <hr>
+    </center>
+
+    <center>   
+    <section id="MediaGallery" class="basictext">
+       <h2 style="color:#11df89">>My Media Gallery!</h2>
+       <h6>by Joshua Fouch</h6>
+
+       <h3>Picture of Spencer Glacier in Alaska, I took with my iPhone!</h3>
+       <figure>
+            <img class="coolpics" src="glacier.jpeg" alt="spencerglacier" style="width:40%"> <!--image--> 
+       </figure>
+       <br>
+       <br>
+       <h3>Video of My trip to Spencer Glacier using snowmobiles</h3>
+       <figure>
+            <video width="400" height="800" controls>
+                <source src="glaciertrip.mp4" type="video/mp4"> <!--video embedding-->
+                Your browser does not support the video tag.
+            </video>
+       </figure>
+       <br><br>
+       <h3>Here is a Lofi Beat I produced!</h3>
+       <figure>
+        <audio controls>
+            <source class="coolpics" src="joshofi.mp3" type="audio/mpeg"> <!--this is for adding audio with controls-->
+            Your browser does not support the audio tag
+        </audio>
+       </figure>
+       <br><br>
+       <h3>Here is one of my favorite Jazz pieces played by the NYO Jazz Big Band!</h3>
+       <figure>
+        <!--embedding a youtube video within html-->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/5PVPM-KoILE?si=l2387H2wLHOSxGTf" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+       </figure> 
+    </section>
+    </center>
+
+    <!--my footer of the page-->
+    <footer class="basictext">
+    <a href="https://github.com/freccia05/WebDevFrontEndAssignments/tree/main/CSSTask">Github Link</a>
+    <h4>&copy Copyright Fouch</h4>  <!--Example of h4 and h5 headers-->
+    <h5> on January 23, 2025 at <time>16:06</time></h5> <!--displays the time 4:06pm-->
+    </footer>
+</body>
+</html>
