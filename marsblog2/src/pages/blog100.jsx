@@ -12,7 +12,7 @@ export default function OriginalHtml() {
   return (
     <iframe
       className="original-html-frame"
-      src="/pages/originalhtml/blog100.html"
+      src={`${import.meta.env.BASE_URL}pages/originalhtml/blog100.html`}
       title="blog100.html"
     />
   )
